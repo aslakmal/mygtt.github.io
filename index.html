@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Davide Giorgetta HTML Boilerplate</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="filters">
+			<div class="filters-group">
+				<fieldset class="filters-container-fieldset button-group control-group" data-filter-group="parole">
+					<div class="filters-label">
+						<p>Filtra</p>
+					</div>
+					<button class="single-filter visible" data-filter=".word-anthropocene">Anthropocene</button>
+					<button class="single-filter visible" data-filter=".word-cultural-humility">Cultural humility</button>
+					<button class="single-filter visible" data-filter=".word-filiera-km0">Filiera KM0</button>
+					<button class="single-filter visible" data-filter=".word-circular-fashion">Circular fashion</button>
+				</fieldset>
+			</div>
+			<div class="filters-group">
+				<fieldset class="filters-container-fieldset button-group control-group" data-filter-group="paesi">
+					<button class="single-filter visible" data-filter=".country-brasil">Brasil</button>
+					<button class="single-filter visible" data-filter=".country-japan">Japan</button>
+					<button class="single-filter visible" data-filter=".country-nepal">Nepal</button>
+					<button class="single-filter visible" data-filter=".country-laos">Laos</button>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="filters-container">
+			<div class="single-article word-anthropocene word-circular-fashion country-laos">
+				<p>Word: Anthropocene</p>
+				<p>Word: Circular fashion</p>
+				<p>Country: Laos</p>
+			</div>
+			<div class="single-article word-filiera-km0 country-brasil">
+				<p>Word: Filiera KM0</p>
+				<p>Country: Brasil</p>
+			</div>
+			<div class="single-article word-circular-fashion country-japan">
+				<p>Word: Circular fashion</p>
+				<p>Country: Japan</p>
+			</div>
+			<div class="single-article word-cultural-humility country-brasil">
+				<p>Word: Cultural humility</p>
+				<p>Country: Nepal</p>
+			</div>
+			<div class="single-article word-cultural-humility word-filiera-km0 country-japan">
+				<p>Word: Cultural humility</p>
+				<p>Word: Filiera KM0</p>
+				<p>Country: Japan</p>
+			</div>
+			<div class="single-article word-anthropocene country-japan">
+				<p>Word: Anthropocene</p>
+				<p>Country: Japan</p>
+			</div>
+			<div class="single-article word-circular-fashion country-brasil">
+				<p>Word: Circular fashion</p>
+				<p>Country: Brasil</p>
+			</div>
+			<div class="single-article word-filiera-km0 country-brasil">
+				<p>Word: Filiera KM0</p>
+				<p>Country: Nepal</p>
+			</div>
+			<div class="single-article word-anthropocene word-circular-fashion country-nepal">
+				<p>Word: Anthropocene</p>
+				<p>Word: Circular fashion</p>
+				<p>Country: Nepal</p>
+			</div>
+			<div class="single-article word-cultural-humility country-japan">
+				<p>Word: Cultural humility</p>
+				<p>Country: Japan</p>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
